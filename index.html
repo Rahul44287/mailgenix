@@ -158,7 +158,7 @@
   }
 </style>
 <div class="topnav">
-<a href="/index.html">Home</a>
+<a href="/" id="homeLink">Home</a>
 <a href="About_us1.html">About Us</a>
 <a href="Our_Services1.html">Our Services</a>
 <a href="FAQs1.html">FAQs</a>
@@ -250,5 +250,12 @@
         Popular Searches: Welcome Email | Skincare Newsletter | Email Automation | D2C Marketing | Retention Strategy
     </div>
 </footer>
+        <script>
+  // If on the homepage, disable the "Home" button link
+  if (window.location.pathname === '/') {
+      document.getElementById('homeLink').removeAttribute('href');
+  }
+</script>
+
 </body>
 </html>
