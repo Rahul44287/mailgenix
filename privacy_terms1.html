@@ -41,7 +41,20 @@
             font-size: 14px;
         }
     </style>
-</head>
+<style>
+@media (max-width: 768px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  header, .header, nav, .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+</style></head>
 <body>
 <!-- Responsive Navbar -->
 <style>
@@ -79,14 +92,14 @@
   }
 </style>
 <div class="topnav">
-<a href="index.html">Home</a>
+<a href="Home1.html">Home</a>
 <a href="About_us1.html">About Us</a>
 <a href="Our_Services1.html">Our Services</a>
 <a href="FAQs1.html">FAQs</a>
 <a href="privacy_terms1.html">Privacy Policy</a>
 <a href="contact us1.html">Contact Us</a>
 </div>
-<header style="background: linear-gradient(to right, #c471ed, #f64f59); padding: 20px; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"><img alt="MailGenix Logo" src="assets/logo.jpeg" style="height: 60px; position: absolute; left: 20px;"/><span style="color: white; font-size: 24px; font-weight: bold;">Privacy Policy &amp; Terms</span></header>
+<header style="background: linear-gradient(to right, #c471ed, #f64f59); padding: 20px; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"><img alt="MailGenix Logo" src="assets/logo.jpeg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/><span style="color: white; font-size: 24px; font-weight: bold;; text-align: center; width: 100%;">Privacy Policy &amp; Terms</span></header>
 <section>
 <h2>Privacy Policy</h2>
 <div style="text-align: center; margin: 20px 0;">
