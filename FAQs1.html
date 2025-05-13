@@ -78,6 +78,24 @@ button.cta {
 button.cta:hover {
   background-color: #9c27b0;
 }
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  header div {
+    flex: 1 1 100%;
+    margin-top: 10px;
+  }
+}
 </style>
 </head>
 <body>
@@ -107,6 +125,24 @@ button.cta:hover {
   .topnav a:hover {
     background-color: #9c27b0;
   }
+  @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    header a {
+        width: auto;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
   @media screen and (max-width: 600px) {
     .topnav {
       flex-direction: column;
@@ -124,7 +160,12 @@ button.cta:hover {
 <a href="privacy_terms1.html">Privacy Policy</a>
 <a href="contact us1.html">Contact Us</a>
 </div>
-<header style="background: linear-gradient(to right, #c471ed, #f64f59);padding: 20px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;"><img alt="MailGenix Logo" src="assets/logo.jpeg" style="height:60px; flex: 0 0 auto;"/><div style="text-align: center;flex: 1 1 100%;margin-top: 10px;"><h1 style="font-size: 2em; margin: 0; color: #ba00a3;">Frequently Asked Questions</h1><p style="margin: 0; color: white;">Your email marketing queries, answered.</p></div></header>
+<header style="background: linear-gradient(to right, #c471ed, #f64f59);padding: 20px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;">
+<img alt="MailGenix Logo" src="assets/logo.jpeg" style="height:60px; flex: 0 0 auto; max-width: 100%; height: auto;"/>
+<div style="text-align: center;flex: 1 1 100%;margin-top: 10px;"><h1 style="font-size: 2em; margin: 0; color: #ba00a3;">Frequently Asked Questions</h1>
+<p style="margin: 0; color: white;">Your email marketing queries, answered.</p>
+</div>
+</header>
 <section class="faq-container">
 <div class="faq">
 <h3>What services does MailGenix offer?</h3>
